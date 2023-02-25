@@ -1,5 +1,5 @@
 # play-framework-template
-Scala Play! Framework Template
+Scala Play! Framework Template with GraphQL (Caliban)
 
 ## Getting Started
 

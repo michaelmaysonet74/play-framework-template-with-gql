@@ -3,4 +3,6 @@
 # https://www.playframework.com/documentation/latest/ScalaRouting
 # ~~~~
 
-GET     /status    controllers.TemplateController.getStatus(url: String)
+GET     /rest/status    controllers.TemplateController.getStatus(url: String)
+
+->      /graphql        controllers.GraphQLController

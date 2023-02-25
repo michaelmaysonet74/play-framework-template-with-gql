@@ -20,7 +20,7 @@ class TemplateController(
     Action.async {
       logger.info("GET /")
       templateService.getStatus(url).map { status =>
-        Ok(Json.toJson(TemplateResponse(status)))
+        Ok(Json.toJson(TemplateResponse(url, status)))
       }
     }
 

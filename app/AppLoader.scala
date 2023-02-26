@@ -1,3 +1,5 @@
+package loader
+
 import akka.stream.Materializer
 import modules.{GraphQLModule, TemplateModule}
 import com.softwaremill.macwire.wire

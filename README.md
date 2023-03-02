@@ -14,3 +14,5 @@ $ sbt run
 # (Server started, use Enter to stop and go back to the console...)
 
 ```
+
+<img width="1718" alt="Screenshot 2023-03-02 at 1 53 47 PM" src="https://user-images.githubusercontent.com/20152719/222537821-950e78bd-aa6f-4130-8bd5-dc309b840fdd.png">

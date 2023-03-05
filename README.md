@@ -25,3 +25,5 @@ $ sbt calibanGenClient  [Schema URL] app/graphql/schemas/clients/[Name]Schema.sc
 # Example using the Countries GraphQL endpoint
 $ sbt calibanGenClient https://countries.trevorblades.com/graphql app/graphql/schemas/clients/CountriesSchema.scala
 ```
+
+<img width="1653" alt="Screenshot 2023-03-05 at 12 53 01 PM" src="https://user-images.githubusercontent.com/20152719/222980318-867541a6-8150-4a09-82f5-df4346a0e7cb.png">

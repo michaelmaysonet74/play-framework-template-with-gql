@@ -8,15 +8,17 @@ ThisBuild / organization := "com.michaelmaysonet74"
 ThisBuild / organizationName := "michaelmaysonet74"
 
 lazy val root = (project in file("."))
-  .enablePlugins(PlayScala)
+  .enablePlugins(PlayScala, CalibanPlugin)
   .settings(
     name := """play-framework-template-with-gql""",
     libraryDependencies ++= Seq(
       scalaTest % Test,
       macwireMacros % Provided,
       macwireUtil,
-      caliban,
+      calibanLib,
       calibanPlay,
+      calibanClient,
+      weePickle,
       ws
     ),
     playDefaultPort := 9000

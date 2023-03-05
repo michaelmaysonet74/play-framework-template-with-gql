@@ -1,6 +1,6 @@
 package models
 
-import play.api.libs.json.{Json, OWrites}
+import com.rallyhealth.weepickle.v1.WeePickle.{macroFrom, From}
 
 final case class TemplateResponse(
   url: String,
@@ -8,5 +8,7 @@ final case class TemplateResponse(
 )
 
 object TemplateResponse {
-  implicit val encoder: OWrites[TemplateResponse] = Json.writes[TemplateResponse]
+
+  implicit val w: From[TemplateResponse] = macroFrom[TemplateResponse]
+
 }

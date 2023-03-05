@@ -1,14 +1,14 @@
 package loader
 
 import akka.stream.Materializer
-import modules.{GraphQLModule, TemplateModule}
+import modules.{CountriesModule, GraphQLModule, TemplateModule}
 import com.softwaremill.macwire.wire
 import play.api.ApplicationLoader.Context
 import play.api.{Application, ApplicationLoader, BuiltInComponentsFromContext, Logger, LoggerConfigurator}
 import play.api.routing.Router
-import router.Routes
 import play.api.libs.ws.ahc.AhcWSComponents
 import play.filters.HttpFiltersComponents
+import router.Routes
 
 import scala.concurrent.ExecutionContext
 
@@ -29,6 +29,7 @@ class AppComponents(
     with AhcWSComponents
     with HttpFiltersComponents
     with TemplateModule
+    with CountriesModule
     with GraphQLModule {
 
   override implicit def mat: Materializer = materializer

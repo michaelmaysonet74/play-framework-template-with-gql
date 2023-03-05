@@ -3,7 +3,6 @@ package controllers
 import graphql.schema.TemplateSchema
 import akka.stream.Materializer
 import caliban.PlayAdapter
-import play.api.mvc.ControllerComponents
 import play.api.routing.{Router, SimpleRouter}
 import zio.Unsafe
 import scala.concurrent.ExecutionContext

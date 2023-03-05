@@ -11,13 +11,7 @@ import play.api.libs.ws.WSClient
 
 import scala.concurrent.ExecutionContext
 
-trait TemplateModule {
-
-  implicit def ec: ExecutionContext
-  implicit def logger: Logger
-
-  def controllerComponents: ControllerComponents
-  def wsClient: WSClient
+trait TemplateModule extends ControllerModule with ClientModule {
 
   lazy val templateClient: TemplateClient = wire[TemplateClient]
   lazy val templateService: TemplateService = wire[TemplateServiceImpl]

@@ -1,10 +1,10 @@
-package graphql.clients
+package graphql.schemas.clients
 
 import caliban.client.FieldBuilder._
 import caliban.client._
 import caliban.client.__Value._
 
-object CoutriesClient {
+object CountriesSchema {
 
   type _Any = String
 

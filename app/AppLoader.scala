@@ -1,12 +1,12 @@
 package loader
 
 import akka.stream.Materializer
-import modules.{CountriesModule, GraphQLModule, TemplateModule}
 import com.softwaremill.macwire.wire
+import modules.{CountriesModule, GraphQLModule, TemplateModule}
 import play.api.ApplicationLoader.Context
-import play.api.{Application, ApplicationLoader, BuiltInComponentsFromContext, Logger, LoggerConfigurator}
-import play.api.routing.Router
+import play.api._
 import play.api.libs.ws.ahc.AhcWSComponents
+import play.api.routing.Router
 import play.filters.HttpFiltersComponents
 import router.Routes
 

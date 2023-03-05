@@ -20,7 +20,8 @@ class CountriesServiceImpl(
   override def getCountryByCode(code: String): Future[Option[CountryResponse]] =
     if (code.exists(_.isDigit))
       Future.successful(None)
-    else
+    else {
       countriesClient.getCountryByCode(code.toUpperCase)
+    }
 
 }

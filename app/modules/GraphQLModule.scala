@@ -4,8 +4,6 @@ import akka.stream.Materializer
 import com.softwaremill.macwire.wire
 import controllers.GraphQLController
 
-import scala.concurrent.ExecutionContext
-
 trait GraphQLModule extends TemplateModule {
 
   implicit def mat: Materializer

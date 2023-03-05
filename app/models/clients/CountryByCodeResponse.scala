@@ -1,4 +1,4 @@
-package models
+package models.clients
 
 import com.rallyhealth.weepickle.v1.WeePickle.{macroTo, To}
 
@@ -13,11 +13,22 @@ object CountryByCodeResponse {
 }
 
 final case class CountryByCodeData(
-  country: CountryResponse
+  country: CountryByCode
 )
 
 object CountryByCodeData {
 
   implicit val r: To[CountryByCodeData] = macroTo[CountryByCodeData]
+
+}
+
+final case class CountryByCode(
+  name: String,
+  emoji: String
+)
+
+object CountryByCode {
+
+  implicit val r: To[CountryByCode] = macroTo[CountryByCode]
 
 }

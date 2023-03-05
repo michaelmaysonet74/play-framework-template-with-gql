@@ -4,7 +4,7 @@ import com.rallyhealth.weepickle.v1.WeePickle.{macroFromTo, FromTo}
 
 final case class CountryResponse(
   name: String,
-  emoji: String
+  flag: String
 )
 
 object CountryResponse {

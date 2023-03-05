@@ -1,4 +1,4 @@
-package graphql.schema
+package graphql.schemas
 
 import caliban.GraphQL.graphQL
 import caliban.{GraphQL, RootResolver}
